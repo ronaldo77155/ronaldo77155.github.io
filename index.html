@@ -95,7 +95,7 @@
         <div class="flex flex-col sm:flex-row gap-4 mb-8">
             <input type="text" id="searchInput" placeholder="물리 용어를 검색하세요 (예: 뉴턴, 상대성 이론)" class="search-input flex-grow">
             <button id="searchButton" class="search-button">검색</button>
-            <button id="newButton" class="new-button">홈</button> <!-- New button added here -->
+            <button id="newButton" class="new-button">구글로 이동</button> <!-- Button text changed -->
         </div>
 
         <div id="searchResults" class="space-y-4">
@@ -276,9 +276,9 @@
             }
         });
 
-        // Add an event listener for the new button (example action)
+        // Add an event listener for the new button to redirect to Google
         newButton.addEventListener('click', () => {
-            //alert('새로운 버튼이 클릭되었습니다!'); // You can change this action
+            window.location.href = 'https://www.google.com'; // Redirect to Google
         });
 
         // Initial display: Show all terms when the page loads
